@@ -9,6 +9,6 @@ do
     fi
     if [ -z $id ]
     then
-        echo "ERROR :: $id has no ID!" >> mk_people.log
+        echo "ERROR :: $link has no ID!" >> mk_people.log
     fi
 done
