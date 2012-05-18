@@ -5,7 +5,7 @@
 # Each results page contains a link to a "Person" or composer.
 
 # Insert the 'seed' URL below. 
-URL='http://imslp.org/index.php?title=Category:People&subcatuntil=Flotow%2C+Friedrich+von#'
+URL='http://imslp.org/wiki/Category:People'
 
 while true
 do
