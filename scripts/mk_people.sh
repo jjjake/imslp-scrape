@@ -1,6 +1,6 @@
-for link in `cat people_pages.txt`
+for link in `cat picm`
 do
-    id=$(curl -s $link | egrep -o  'oldid=[0-9]{6}' | egrep -o '[0-9]{6}' | sort -u)
+    id=$(curl -s $link | egrep -o  'oldid=[0-9]{5,6}' | egrep -o '[0-9]{5,6}' | sort -u)
     if [ ! -f ./people/$id/$id.html ] 
     then
         echo "link: $link\tid: $id" >> mk_people.log
