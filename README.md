@@ -11,7 +11,7 @@ As of May 18, 2012, IMSLP has:
 
 ## Scripts
 
-`get_result_page_urls.sh`: Generates a list of links to every results page under 
+`get_people_result_page_urls.sh`: Generates a list of links to every results page under 
 [http://imslp.org/wiki/Category:People](http://imslp.org/wiki/Category:People). There are 200 results per page,
 and 9,162 results in total.
 
