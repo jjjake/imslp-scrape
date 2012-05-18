@@ -16,7 +16,7 @@ bad_links = ['http://imslp.org/wiki/Category:Arrangers',
              'http://imslp.org/wiki/Category:Translators',
              'http://imslp.org/wiki/Category:WIMA_files']
 
-for url in open('composition_lists.txt'):
+for url in open('people_results_page_urls.txt'):
     get_links = ['lwp-request', '-o', 'links', url]
     p = Popen(get_links, shell=False, stdin=PIPE, stdout=PIPE, stderr=STDOUT)
     output = p.stdout.read()

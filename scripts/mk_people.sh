@@ -1,4 +1,8 @@
-for link in `cat people_pages.txt`
+# Create a directory for each person page and download it's HTML into said directory.
+# Input: people_page_urls.txt, a list of URLs to each person page.
+# Output: people/{ID}/{ID}.html
+
+for link in `people_page_urls.txt`
 do
     id=$(curl -s $link | egrep -o  'oldid=[0-9]{5,6}' | egrep -o '[0-9]{5,6}' | sort -u)
     if [ ! -f ./people/$id/$id.html ] 
