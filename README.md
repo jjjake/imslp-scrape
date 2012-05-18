@@ -11,10 +11,10 @@ As of May 18, 2012, IMSLP has:
 
 ## Scripts
 
-`get_people_links.sh`: Generates a list of links to every results page under 
+`get_result_page_urls.sh`: Generates a list of links to every results page under 
 [http://imslp.org/wiki/Category:People](http://imslp.org/wiki/Category:People). There are 200 results per page,
 and 9,162 results in total.
 
-`get_people_
+`get_people_page_urls.py`:
 
-`mk_people.sh` Create a directory for each person page and download it's HTML into said directory. 
+`mk_people.sh`: Create a directory for each person page and download it's HTML into said directory. 

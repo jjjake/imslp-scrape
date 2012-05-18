@@ -1,5 +1,4 @@
 #!/home/jake/.virtualenvs/default/bin/python
-
 import urllib2
 import re
 from subprocess import Popen, PIPE, STDOUT
