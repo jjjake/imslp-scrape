@@ -1,10 +1,11 @@
 # Create a directory for each person page and download it's HTML into said directory.
 # Input: people_page_urls.txt, a list of URLs to each person page.
-# Output: people/{ID}/{ID}.html
+# Output: people/{ID}/{ID}.html + tab-delimited 2 column text file (id, url).
 
-for link in `people_page_urls.txt`
+for link in `cat people_page_urls.txt`
 do
     id=$(curl -s $link | egrep -o  'oldid=[0-9]{5,6}' | egrep -o '[0-9]{5,6}' | sort -u)
+    echo "$id\t$link"
     if [ ! -f ./people/$id/$id.html ] 
     then
         mkdir -p ./people/$id
