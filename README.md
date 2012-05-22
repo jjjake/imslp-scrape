@@ -18,3 +18,9 @@ and 9,162 results in total.
 `get_people_page_urls.py`: Generates a list of links to every person page (i.e. [http://imslp.org/wiki/Category:Aagesen,_Truid](http://imslp.org/wiki/Category:Aagesen,_Truid)).
 
 `mk_people.sh`: Create a directory for each person page and download it's HTML into said directory. 
+
+`get_score_page_urls.py`: Create `score_id_to_url_map.txt`, a text file mapping score IDs to URLs. Download HTML source for given score page into people directory.
+
+`get_pdf.py`: Download all of the PDFs for a given person/composer into the corresponding directory.
+
+`mk_meta.py`: Generate metadata, and move files to upload/staging directory.
